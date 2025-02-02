@@ -5,7 +5,7 @@ import NewsList from './components/NewsList';
 import AddNews from './components/AddNews';
 import AdminPanel from './components/AdminPanel';
 import PrivateRoute from './components/PrivateRoute';
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
     <Router>
