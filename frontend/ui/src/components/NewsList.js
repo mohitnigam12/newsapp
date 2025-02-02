@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+const API_KEY = "7a707717fcec41bb8cfee6022a1b48cd";
+const url = "https://newsapi.org/v2/everything?q=";
 
 function NewsList() {
   const [news, setNews] = useState([]);
@@ -10,14 +12,14 @@ function NewsList() {
     // Debugging: Check if token exists
     console.log('Token:', token);
 
-    axios.get('http://localhost:8080/api/news', {
-      headers: {
-        Authorization: `Bearer ${token}`
-      }
+    axios.get('https://newsapi.org/v2/everything?q=world&apiKey=7a707717fcec41bb8cfee6022a1b48cd', {
+      // headers: {
+      //   Authorization: `Bearer ${token}`
+      // }
     })
     .then(response => {
       console.log('Response:', response);  // Debugging: Check the response
-      setNews(response.data);
+      setNews(response.data.articles);
     })
     .catch(error => {
       console.error('Error fetching news:', error);  // Debugging: Check for errors

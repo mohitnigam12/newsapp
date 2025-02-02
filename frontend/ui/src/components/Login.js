@@ -1,24 +1,33 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 
 function Login() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
-
+  const navigate = useNavigate();
   const handleLogin = async (e) => {
-    e.preventDefault();
-    try {
-      const response = await axios.post('http://localhost:8080/api/auth/login', {
-        username,
-        password,
-      });
-      console.log('Token:', response.data.token); // Check if token is returned
-      localStorage.setItem('token', response.data.token); // Save token if returned
-    } catch (err) {
-      console.error('Login failed:', err.response ? err.response.data : err.message);
-      setError('Invalid username or password');
+    const user={
+      username:username,
+      password:password
     }
+    e.preventDefault();
+    
+      axios.post('http://localhost:9090/auth/login',user)
+      .then((res)=>{
+        navigate("/admin")
+        console.log('Token:', res.data.token); 
+        localStorage.setItem('token', res.data.token);
+      })
+      .catch((err)=>{
+
+        console.error('Login failed:', err.response ? err.response.data : err.message);
+        setError('Invalid username or password');
+      
+      })
+     
+     
   };
 
   return (
