@@ -12,6 +12,7 @@ function App() {
       <Routes>
         <Route path="/" element={<NewsList />} />
         <Route path="/login" element={<Login />} />
+        <Route path='/add' element={<AddNews/>}/>
         <Route path="/add-news" element={<PrivateRoute roles={['EDITOR', 'ADMIN']}><AddNews /></PrivateRoute>} />
         <Route path="/admin" element={<PrivateRoute roles={['ADMIN']}><AdminPanel /></PrivateRoute>} />
       </Routes>
