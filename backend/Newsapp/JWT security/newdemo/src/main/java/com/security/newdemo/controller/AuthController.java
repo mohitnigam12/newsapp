@@ -1,7 +1,10 @@
 package com.security.newdemo.controller;
 
+import java.util.HashMap;
+import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
+import com.security.newdemo.dao.UserRepository;
 import com.security.newdemo.entity.User;
 import com.security.newdemo.service.RegisterService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -30,21 +33,27 @@ public class AuthController {
     // Store active tokens per username
     private final ConcurrentHashMap<String, String> activeTokens = new ConcurrentHashMap<>();
 
-
+    @Autowired
+    private UserRepository userRepository;
     @PostMapping("/login")
     public ResponseEntity<?> login(@RequestBody LoginRequest loginRequest) {
         UsernamePasswordAuthenticationToken authToken =
                 new UsernamePasswordAuthenticationToken(loginRequest.getUsername(), loginRequest.getPassword());
 
         Authentication authentication = authenticationManager.authenticate(authToken);
-
-        String token = tokenService.generateToken(authentication.getName());
+        User u=  userRepository.findByUsername(loginRequest.getUsername());
+        String token = tokenService.generateToken(authentication.getName(), u.getRole());
         return ResponseEntity.ok(new AuthResponse(token));
     }
     @PostMapping("/signup")
     public ResponseEntity<?> signup(@RequestBody User user) {
+        if(user.getRole()==null){
+            user.setRole("ROLE_USER");
+        }
         userService.saveUser(user);
-        return ResponseEntity.ok("user added successfully");
+        Map<String, String> response = new HashMap<>();
+        response.put("message", "User added successfully"); // Return JSON instead of plain text
+        return ResponseEntity.ok(response);
     }
 
     // @PostMapping("/login")

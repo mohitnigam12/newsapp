@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import SignUp from './components/SignUp';
 import Login from './components/Login';
 import NewsList from './components/NewsList';
 import AddNews from './components/AddNews';
@@ -11,14 +12,18 @@ function App() {
   return (
     <Router>
       <Routes>
+        {/* Public Routes */}
         <Route path="/" element={<NewsList />} />
-        <Route path="/local" element={<LocalNews />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/admin" element={<AdminPanel />} />
-        <Route path='/add' element={<AddNews/>}/>
-        <Route path="/add-news" element={<PrivateRoute roles={['EDITOR', 'ADMIN']}><AddNews /></PrivateRoute>} />
-        {/* <Route path="/admin" element={<PrivateRoute roles={['ADMIN']}><AdminPanel /></PrivateRoute>} /> */}
+        <Route path="/signup" element={<SignUp />} />
+
+        {/* Private Routes */}
+        <Route path="/local" element={<PrivateRoute><LocalNews /></PrivateRoute>} />
+        
+        <Route path="/admin" element={<PrivateRoute roles={['ADMIN']}><AdminPanel /></PrivateRoute>} />
+        <Route path="/add" element={<PrivateRoute roles={['USER','EDITOR', 'ADMIN']}><AddNews /></PrivateRoute>} />
       </Routes>
+
     </Router>
   );
 }

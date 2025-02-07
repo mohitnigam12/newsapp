@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="33ea74f1-4a5b-4604-87c7-ab4da22d854f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/backend.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JWT security/newdemo/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JWT security/newdemo/src/main/java/com/security/newdemo/config/AuthenticationProcessors.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JWT security/newdemo/src/main/java/com/security/newdemo/config/CustomDBBasedUserDetailsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JWT security/newdemo/src/main/java/com/security/newdemo/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JWT security/newdemo/src/main/java/com/security/newdemo/controller/AuthController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JWT security/newdemo/src/main/java/com/security/newdemo/controller/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JWT security/newdemo/src/main/java/com/security/newdemo/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JWT security/newdemo/src/main/java/com/security/newdemo/dataentry/InitialAdminSetup.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JWT security/newdemo/src/main/java/com/security/newdemo/entity/AuthResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JWT security/newdemo/src/main/java/com/security/newdemo/entity/LoginRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JWT security/newdemo/src/main/java/com/security/newdemo/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JWT security/newdemo/src/main/java/com/security/newdemo/filter/CustomJWTTokenService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JWT security/newdemo/src/main/java/com/security/newdemo/service/RegisterService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JWT security/newdemo/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JWT security/newdemo/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/JWT security/newdemo/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JWT security/newdemo/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/JWT security/newdemo/mvnw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JWT security/newdemo/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/JWT security/newdemo/mvnw.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JWT security/newdemo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/JWT security/newdemo/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JWT security/newdemo/src/main/java/com/security/newdemo/NewdemoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/JWT security/newdemo/src/main/java/com/security/newdemo/NewdemoApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JWT security/newdemo/src/main/java/com/security/newdemo/dao/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/JWT security/newdemo/src/main/java/com/security/newdemo/dao/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JWT security/newdemo/src/main/java/com/security/newdemo/filter/CustomFilterForJWT.java" beforeDir="false" afterPath="$PROJECT_DIR$/JWT security/newdemo/src/main/java/com/security/newdemo/filter/CustomFilterForJWT.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JWT security/newdemo/src/test/java/com/security/newdemo/NewdemoApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/JWT security/newdemo/src/test/java/com/security/newdemo/NewdemoApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Newsapp/.gitattributes" beforeDir="false" afterPath="$PROJECT_DIR$/Newsapp/.gitattributes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Newsapp/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/Newsapp/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Newsapp/JWT security/newdemo/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/Newsapp/JWT security/newdemo/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Newsapp/JWT security/newdemo/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/Newsapp/JWT security/newdemo/mvnw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Newsapp/JWT security/newdemo/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/Newsapp/JWT security/newdemo/mvnw.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Newsapp/JWT security/newdemo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Newsapp/JWT security/newdemo/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Newsapp/JWT security/newdemo/src/main/java/com/security/newdemo/NewdemoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Newsapp/JWT security/newdemo/src/main/java/com/security/newdemo/NewdemoApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Newsapp/JWT security/newdemo/src/main/java/com/security/newdemo/dao/NewsRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Newsapp/JWT security/newdemo/src/main/java/com/security/newdemo/dao/NewsRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Newsapp/JWT security/newdemo/src/main/java/com/security/newdemo/dao/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Newsapp/JWT security/newdemo/src/main/java/com/security/newdemo/dao/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Newsapp/JWT security/newdemo/src/main/java/com/security/newdemo/entity/LoginRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Newsapp/JWT security/newdemo/src/main/java/com/security/newdemo/entity/LoginRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Newsapp/JWT security/newdemo/src/main/java/com/security/newdemo/filter/CustomFilterForJWT.java" beforeDir="false" afterPath="$PROJECT_DIR$/Newsapp/JWT security/newdemo/src/main/java/com/security/newdemo/filter/CustomFilterForJWT.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Newsapp/JWT security/newdemo/src/test/java/com/security/newdemo/NewdemoApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/Newsapp/JWT security/newdemo/src/test/java/com/security/newdemo/NewdemoApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Newsapp/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/Newsapp/mvnw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Newsapp/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/Newsapp/mvnw.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Newsapp/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Newsapp/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Newsapp/src/main/java/com/cdac/NewsappApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Newsapp/src/main/java/com/cdac/NewsappApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Newsapp/src/main/java/com/cdac/config/JwtFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Newsapp/src/main/java/com/cdac/config/JwtFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Newsapp/src/main/java/com/cdac/repositories/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Newsapp/src/main/java/com/cdac/repositories/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Newsapp/src/test/java/com/cdac/NewsappApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/Newsapp/src/test/java/com/cdac/NewsappApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/ui/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/ui/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/ui/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/ui/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/ui/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/ui/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/ui/public/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/ui/public/logo512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/ui/public/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/ui/public/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/ui/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/ui/src/App.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/ui/src/App.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/ui/src/components/AddNews.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/ui/src/components/AdminPanel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/ui/src/components/Login.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/ui/src/components/NewsList.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/ui/src/components/PrivateRoute.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/ui/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/ui/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/ui/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/ui/src/reportWebVitals.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../frontend/ui/src/setupTests.js" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 1
+}]]></component>
+  <component name="ProjectId" id="2sZmtgO8PoZAvW8U2ekb5M2orle" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "Merging main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="33ea74f1-4a5b-4604-87c7-ab4da22d854f" name="Changes" comment="" />
+      <created>1738671688128</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1738671688128</updated>
+    </task>
+    <servers />
+  </component>
+</project>

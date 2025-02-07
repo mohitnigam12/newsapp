@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import Card from './Card'; // Import the Card component
-import { Button, Container, Row, Col, Form, Navbar, Nav } from 'react-bootstrap'; // Import necessary components
-import { Link } from 'react-router-dom';
+import { Row, Col} from 'react-bootstrap'; // Import necessary components
+import { Navigate } from 'react-router-dom';
 import NavBar from './NavBar';
 const API_KEY = "7a707717fcec41bb8cfee6022a1b48cd";
-const url = "https://newsapi.org/v2/everything?q=";
+// const url = "https://newsapi.org/v2/everything?q=";
 
 function NewsList() {
   const [news, setNews] = useState([]);
@@ -63,6 +63,7 @@ function NewsList() {
     }
   };
 
+  
   return (
     <div className="p-4">
       {/* Navigation Bar */}
@@ -74,7 +75,12 @@ function NewsList() {
 
       
 
-      <h1 className="text-3xl font-semibold mb-6 text-center">Latest News</h1>
+
+    
+
+       <h1 className="text-3xl font-semibold mb-6 text-center" onClick={()=>Navigate("/signup")}>Latest News</h1>
+      
+      
 
       <Row>
         {news?.length > 0 ? news?.map(d => (

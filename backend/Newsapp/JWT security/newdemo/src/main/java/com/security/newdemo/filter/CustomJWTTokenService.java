@@ -15,14 +15,23 @@ public class CustomJWTTokenService {
     // 1. Creation of JWT token
     private final SecretKey jwtSecret = Keys.secretKeyFor(SignatureAlgorithm.HS256);
 
-    public String generateToken(String username) {
-        return Jwts.builder()
-                .setSubject(username)
-                .setIssuedAt(new Date())
-                .setExpiration(new Date(System.currentTimeMillis() + 86400000)) // 1 day expiry
-                .signWith(jwtSecret) // Use the generated secret key for signing
-                .compact();
-    }
+//    public String generateToken(String username) {
+//        return Jwts.builder()
+//                .setSubject(username)
+//                .setIssuedAt(new Date())
+//                .setExpiration(new Date(System.currentTimeMillis() + 86400000)) // 1 day expiry
+//                .signWith(jwtSecret) // Use the generated secret key for signing
+//                .compact();
+//    }
+public String generateToken(String username, String role) {
+    return Jwts.builder()
+            .setSubject(username)
+            .claim("role", role) // Add role as a claim
+            .setIssuedAt(new Date())
+            .setExpiration(new Date(System.currentTimeMillis() + 86400000)) // 1 day expiry
+            .signWith(jwtSecret) // Use the generated secret key for signing
+            .compact();
+}
 
     // 2. Validation of JWT token
     public String validateToken(String token) {
